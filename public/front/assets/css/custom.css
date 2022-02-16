@@ -1,0 +1,23 @@
+.category {
+    cursor: pointer;
+}
+.category span {
+    color:white;
+}
+.category:hover span {
+    color:black;
+}
+
+.platform-links {
+    width: 100%;
+}
+.platform-links ul li {
+    display: inline-block;
+    background-color: #343444;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.platform-links a {
+    font-style: normal;
+}
