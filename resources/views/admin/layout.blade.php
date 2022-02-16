@@ -12,8 +12,8 @@
           content="NFT">
     <meta name="author" content="PIXINVENT">
     <title>Dashboard - NFT</title>
-    <link rel="apple-touch-icon" href="../../../app-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/ico/favicon.ico">
+
+
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
@@ -217,8 +217,8 @@
                 <li class="nav-item mr-auto"><a class="navbar-brand"
                                                 href="#"><span
                             class="brand-logo">
-                            <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
+                            <svg viewbox="0 0 139 95" version="1.1" xmlns="https://www.w3.org/2000/svg"
+                                 xmlns:xlink="https://www.w3.org/1999/xlink" height="24">
                                 <defs>
                                     <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%"
                                                     y2="89.4879456%">

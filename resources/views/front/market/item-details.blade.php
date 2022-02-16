@@ -27,7 +27,7 @@
             <div class="col-xl-6 col-md-12">
                 <div class="content-left">
                     <div class="media">
-                        <img src="assets/images/box-item/images-item-details.jpg" alt="">
+                        <img src="{{$market_item->image}}" alt="">
                     </div>
                 </div>
             </div>
