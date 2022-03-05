@@ -16,7 +16,7 @@
     <div class="overlay"></div>
     <div class="swiper-container mainslider home auctions">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
                 <div class="slider-item">	
                     <div class="themesflat-container ">
                         <div class="wrap-heading flat-slider flex">
@@ -45,7 +45,7 @@
                         
                     </div>					                           
                 </div><!-- item-->
-            </div>
+            </div> --}}
             <div class="swiper-slide">
                 <div class="slider-item">	
                     <div class="themesflat-container">
@@ -58,42 +58,16 @@
                             <p class="sub-heading mg-t-29 mg-bt-50">Marketplace for monster character cllections non fungible token NFTs
                             </p>
                             <div class="flat-bt-slider flex">
-                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
-                                </span></a>
-                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Create
-                                </span></a>
-                            </div>
-                        </div>
-                    </div>					                           
-                </div><!-- item-->
-            </div>
-            <div class="swiper-slide">
-                <div class="slider-item">	
-                    <div class="themesflat-container flex">
-                        <div class="image three">
-
-                            
-    
-                            <img src="{{ asset('front/assets/images/box-item/imgslider-3.png') }}" alt="Image">
-                            <img class="img-bg" src="{{ asset('front/assets/images/backgroup-secsion/img-bg-sliderhome3.png') }}" alt="Image">
-                        </div>
-                        <div class="wrap-heading flat-slider h3 three">
-                            <h2 class="heading">Discover, and collect
-                            </h2>	
-                            <h2 class="heading">extraordinary</h2>
-                            <h2 class="heading h3"><span class="fill">Monster </span>NFTs</h2>
-                            <p class="sub-heading mt-29 mb-35">Marketplace for monster character cllections non fungible token NFTs
-                            </p>
-                            <div class="flat-bt-slider flex style2">
-                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
-                                </span></a>
-                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Create
+                                {{-- <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
+                                </span></a> --}}
+                                <a href="#" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore Now
                                 </span></a>
                             </div>
                         </div>
                     </div>					                           
                 </div><!-- item-->
             </div>
+ 
         </div>     
         <div class="swiper-pagination"></div>               
     </div>    
@@ -101,7 +75,7 @@
     <div class="swiper-button-prev btn-slide-prev"></div>                   
 </section>
 
-<section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
+{{-- <section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
     <div class="themesflat-container">
         <div class="row">
             <div class="col-md-12">
@@ -125,10 +99,11 @@
                                     <i class="fal fa-check"></i>
                                 </div>
                             </a>
+
                             @foreach($categories as $category)
                                 <a data-id="{{$category->id}}" class="dropdown-item category-item">
                                     <div class='sort-filter category category{{$category->id}}'>
-                                        <span>{{-- <img src="assets/images/icon/rainbow.png" alt="" /> --}}{{$category->category_name}}</span>
+                                        <span>{{$category->category_name}}</span>
                                         <i class="fal fa-check"></i>
                                     </div>
                                 </a>
@@ -143,7 +118,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
     <div class="themesflat-container">

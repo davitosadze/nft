@@ -8,7 +8,7 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <title>Axies | NFT Marketplace HTML Template</title>
+    <title>NFT</title>
 
     <meta name="author" content="themesflat.com">
 
@@ -46,7 +46,7 @@
                                 <div class="wrap-box flex">
                                     <div id="site-logo" class="clearfix">
                                         <div id="site-logo-inner">
-                                            <a href="index.html" rel="home" class="main-logo">
+                                            <a href="/" rel="home" class="main-logo">
                                                 
                                                 <img id="logo_header" src="{{ asset('front/assets/images/logo/logo_dark.png') }}" alt="nft-gaming" width="133" height="56"
                                                     data-retina="{{ asset('front/assets/images/logo/logo_dark@2x.png') }}" data-width="133"
@@ -163,7 +163,6 @@
                     <ul>
                         <li><a href="explore-1.html">Explore</a></li>
                         <li><a href="contact1.html">Contact Us</a></li>
-                        <li><a href="blog.html">Our Blog</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
@@ -171,12 +170,7 @@
             <div class="col-lg-3 col-md-6 col-sm-7 col-12">
                 <div class="widget widget-subcribe">
                     <h5 class="title-widget">Subscribe Us</h5>
-                    <div class="form-subcribe">
-                        <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit">
-                            <input name="email" value="" class="email" type="email" placeholder="info@yourgmail.com" required>
-                            <button id="submit" name="submit" type="submit"><i class="icon-fl-send"></i></button>
-                        </form>
-                    </div>
+
                     <div class="widget-social style-1 mg-t32">
                         <ul>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
