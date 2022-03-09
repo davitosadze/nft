@@ -13,19 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix'=>'admin', 'namespace' => 'Admin'], function(){
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Auth::routes(['register' => false]);
-    Route::middleware('auth')->name('admin.')->group(function(){
+    Route::middleware('auth')->name('admin.')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('home');
 
         Route::resource('categories', CategoryController::class);
         Route::resource('platforms', PlatformController::class);
         Route::resource('market', MarketController::class);
-
     });
-
 });
 
 
 Route::get("/", "Front\IndexController@index")->name('index');
+Route::get("/categories/{id}", "Front\CategoryController@category")->name('category');
 Route::get("/market/{market_item}", 'Front\MarketController@details')->name('item-details');

@@ -133,7 +133,8 @@
                             <div class="heading-live-auctions mg-bt-21">
                                 <h2 class="tf-title pad-l-7">
                                     {{ $item->category_name }}</h2>
-                                <a href="explore-3.html" class="exp style2">EXPLORE MORE</a>
+                                <a href="{{ route('category', $item->id) }}" class="exp style2">EXPLORE
+                                    MORE</a>
                             </div>
                         </div>
 
@@ -172,7 +173,8 @@
                         @endforeach
 
                         <div class="col-md-12 wrap-inner load-more text-center mg-t-4">
-                            <a href="#" id="loadmore" class="sc-button loadmore fl-button pri-3"><span>Enter
+                            <a href="{{ route('category', $market_item->category->id) }}" id="loadmore"
+                                class="sc-button loadmore fl-button pri-3"><span>Enter
                                     Category</span></a>
                         </div>
                     </div>
