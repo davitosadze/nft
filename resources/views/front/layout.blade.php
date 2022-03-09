@@ -64,6 +64,20 @@
                                                 <a href="#">Home</a>
                                             </li>
 
+                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                                <a href="#">Categories</a>
+                                                <ul class="sub-menu">
+                                                    @foreach (\App\Models\Category::all() as $category)
+                                                        <li
+                                                            class="menu-item {{ request()->is('categories/' . $category->id . '') ? 'current-item' : '' }} ">
+                                                            <a
+                                                                href="{{ route('category', $category->id) }}">{{ $category->category_name }}</a>
+                                                        </li>
+                                                    @endforeach
+
+                                                </ul>
+                                            </li>
+
 
                                         </ul>
                                     </nav><!-- /#main-nav -->
