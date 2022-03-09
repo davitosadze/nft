@@ -172,7 +172,8 @@
                         @endforeach
 
                         <div class="col-md-12 wrap-inner load-more text-center mg-t-4">
-                            <a href="#" id="loadmore" class="sc-button loadmore fl-button pri-3"><span>Load More</span></a>
+                            <a href="#" id="loadmore" class="sc-button loadmore fl-button pri-3"><span>Enter
+                                    Category</span></a>
                         </div>
                     </div>
                 @endif
