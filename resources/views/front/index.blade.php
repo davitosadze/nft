@@ -1,22 +1,23 @@
 @extends('front.layout')
 @section('content')
-    
-
-<section class="flat-title-page style2">
-    <img class="bgr-gradient gradient1" src="{{ asset('front/assets/images/backgroup-secsion/bg-gradient1.png') }}" alt="">
-    <img class="bgr-gradient gradient2" src="{{ asset('front/assets/images/backgroup-secsion/bg-gradient2.png') }}" alt="">
-    <img class="bgr-gradient gradient3" src="{{ asset('front/assets/images/backgroup-secsion/bg-gradient3.png') }}" alt="">
-    <div class="shape item-w-16"></div>
-    <div class="shape item-w-22"></div>
-    <div class="shape item-w-32"></div>
-    <div class="shape item-w-48"></div>
-    <div class="shape style2 item-w-51"></div>
-    <div class="shape style2 item-w-51 position2"></div>
-    <div class="shape item-w-68"></div>
-    <div class="overlay"></div>
-    <div class="swiper-container mainslider home auctions">
-        <div class="swiper-wrapper">
-            {{-- <div class="swiper-slide">
+    <section class="flat-title-page style2">
+        <img class="bgr-gradient gradient1" src="{{ asset('front/assets/images/backgroup-secsion/bg-gradient1.png') }}"
+            alt="">
+        <img class="bgr-gradient gradient2" src="{{ asset('front/assets/images/backgroup-secsion/bg-gradient2.png') }}"
+            alt="">
+        <img class="bgr-gradient gradient3" src="{{ asset('front/assets/images/backgroup-secsion/bg-gradient3.png') }}"
+            alt="">
+        <div class="shape item-w-16"></div>
+        <div class="shape item-w-22"></div>
+        <div class="shape item-w-32"></div>
+        <div class="shape item-w-48"></div>
+        <div class="shape style2 item-w-51"></div>
+        <div class="shape style2 item-w-51 position2"></div>
+        <div class="shape item-w-68"></div>
+        <div class="overlay"></div>
+        <div class="swiper-container mainslider home auctions">
+            <div class="swiper-wrapper">
+                {{-- <div class="swiper-slide">
                 <div class="slider-item">	
                     <div class="themesflat-container ">
                         <div class="wrap-heading flat-slider flex">
@@ -46,36 +47,38 @@
                     </div>					                           
                 </div><!-- item-->
             </div> --}}
-            <div class="swiper-slide">
-                <div class="slider-item">	
-                    <div class="themesflat-container">
-                        <div class="wrap-heading flat-slider text-center two">
-                            <h2 class="heading">Discover, and collect
-                            </h2>	
-                            <h1 class="heading"><span class="tf-text s1">extraordinary</span>
-                                <span>Monster NFTs</span>
-                            </h1>
-                            <p class="sub-heading mg-t-29 mg-bt-50">Marketplace for monster character cllections non fungible token NFTs
-                            </p>
-                            <div class="flat-bt-slider flex">
-                                {{-- <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
+                <div class="swiper-slide">
+                    <div class="slider-item">
+                        <div class="themesflat-container">
+                            <div class="wrap-heading flat-slider text-center two">
+                                <h2 class="heading">Discover, and collect
+                                </h2>
+                                <h1 class="heading"><span class="tf-text s1">extraordinary</span>
+                                    <span>Monster NFTs</span>
+                                </h1>
+                                <p class="sub-heading mg-t-29 mg-bt-50">Marketplace for monster character cllections non
+                                    fungible token NFTs
+                                </p>
+                                <div class="flat-bt-slider flex">
+                                    {{-- <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
                                 </span></a> --}}
-                                <a href="#" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore Now
-                                </span></a>
+                                    <a href="#"
+                                        class="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore Now
+                                        </span></a>
+                                </div>
                             </div>
                         </div>
-                    </div>					                           
-                </div><!-- item-->
-            </div>
- 
-        </div>     
-        <div class="swiper-pagination"></div>               
-    </div>    
-    <div class="swiper-button-next btn-slide-next active"></div>
-    <div class="swiper-button-prev btn-slide-prev"></div>                   
-</section>
+                    </div><!-- item-->
+                </div>
 
-{{-- <section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-next btn-slide-next active"></div>
+        <div class="swiper-button-prev btn-slide-prev"></div>
+    </section>
+
+    {{-- <section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
     <div class="themesflat-container">
         <div class="row">
             <div class="col-md-12">
@@ -100,7 +103,7 @@
                                 </div>
                             </a>
 
-                            @foreach($categories as $category)
+                            @foreach ($categories as $category)
                                 <a data-id="{{$category->id}}" class="dropdown-item category-item">
                                     <div class='sort-filter category category{{$category->id}}'>
                                         <span>{{$category->category_name}}</span>
@@ -120,62 +123,65 @@
     </div>
 </section> --}}
 
-<section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
-    <div class="themesflat-container">
-        
-        @foreach($market as $item)
-        @if(count($item->market))
-        <div class="row">
-            <div class="col-md-12">
-                <div class="heading-live-auctions mg-bt-21">
-                    <h2 class="tf-title pad-l-7">
-                        {{$item->category_name}}</h2>
-                    <a href="explore-3.html" class="exp style2">EXPLORE MORE</a>
-                </div>
-            </div>
-            
-            @foreach($item->market as $market_item)
-            <div class="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                <div class="sc-card-product">
-                    <div class="card-media">
-                        
-                        <a href="{{ route('item-details', $market_item->id) }}"><img src="{{ $market_item->image }}" alt="Image"></a>
-                    </div>
-                    <div class="card-title">
-                        <h5 class="style2"><a href="item-details.html">{{$market_item->title}}</a></h5>
-                    </div>
-                    <div class="meta-info">
-                        <div class="author">
+    <section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
+        <div class="themesflat-container">
 
-                            <div class="info">
-                                <span>Owned By</span>
-                                <h6> <a href="author02.html">{{$market_item->author}}</a> </h6>
+            @foreach ($market as $item)
+                @if (count($item->market))
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-live-auctions mg-bt-21">
+                                <h2 class="tf-title pad-l-7">
+                                    {{ $item->category_name }}</h2>
+                                <a href="explore-3.html" class="exp style2">EXPLORE MORE</a>
                             </div>
                         </div>
-                        <div class="price">
-                            <span>Price</span>
-                            <h5> {{$market_item->price}} ETH</h5>
+
+                        @foreach ($item->market as $market_item)
+                            <div class="fl-item-{{ $market_item->id }} col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                                <div class="sc-card-product">
+                                    <div class="card-media">
+
+                                        <a href="{{ route('item-details', $market_item->id) }}"><img
+                                                src="{{ $market_item->image }}" alt="Image"></a>
+                                    </div>
+                                    <div class="card-title">
+                                        <h5 class="style2"><a
+                                                href="item-details.html">{{ $market_item->title }}</a>
+                                        </h5>
+                                    </div>
+                                    <div class="meta-info">
+                                        <div class="author">
+
+                                            <div class="info">
+                                                <span>Owned By</span>
+                                                <h6> <a href="author02.html">{{ $market_item->author }}</a> </h6>
+                                            </div>
+                                        </div>
+                                        <div class="price">
+                                            <span>Price</span>
+                                            <h5> {{ $market_item->price }} ETH</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <a href="{{ route('item-details', $market_item->id) }}"
+                                            class="sc-button style bag fl-button pri-3"><span>Details</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+
+                        <div class="col-md-12 wrap-inner load-more text-center mg-t-4">
+                            <a href="#" id="loadmore" class="sc-button loadmore fl-button pri-3"><span>Load More</span></a>
                         </div>
                     </div>
-                    <div class="card-bottom">
-                        <a href="{{ route('item-details', $market_item->id) }}" class="sc-button style bag fl-button pri-3"><span>Details</span></a>
-                    </div>
-                </div>
-            </div>
+                @endif
             @endforeach
 
-            <div class="col-md-12 wrap-inner load-more text-center mg-t-4">
-                <a href="#" id="loadmore" class="sc-button loadmore fl-button pri-3"><span>Load More</span></a>
-            </div>
         </div>
-        @endif
-        @endforeach
-
-    </div>
-</section>
+    </section>
 @endsection
 @section('js')
-
-@parent('js')
+    @parent('js')
     <script src="{{ asset('front/assets/filter/filter.js') }}"></script>
 @endsection

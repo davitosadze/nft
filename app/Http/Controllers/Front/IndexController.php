@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         $categories = Category::all();
         $market = Category::with('market')->get();
         return view("front.index", compact('categories', 'market'));
